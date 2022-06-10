@@ -36,3 +36,32 @@ O aplicativo permite manipular as listas da seguinte forma:
 * Caso já exista um pedido pendente com mesma data e hora na lista, o programa solicitará correções antes de salvar.
 * Você pode editar todos os aspectos do serviço após criado, **desde que esse serviço esteja com status de conclusão 'Pendente'**
 * Você pode alterar o status de conclusão do pedido para "Concluído" clicando no ícone de checklist no rodapé do pedido ou "Cancelado" clicando no ícone de X no rodapé.
+
+## Vendo informações:
+Ao clicar em um item da lista de clientes, será expandida uma tela com todas informações do cliente já cadastradas. O mesmo ocorre ao tocar em um serviço, ele exibe suas informações e permite que sejam visualizadas as do cliente associado.
+
+## Clientes e categorias deletadas
+Quando deletamos uma categoria ou serviço do nosso aplicativo ela é removida do banco de dados. Mas e se houver um serviço associado a elas??
+
+Quando uma categoria é excluída, a categoria do serviço associado a ela é automaticamente atualizado para "Categoria inexistente" com uma tag cinza que indica que a categoria não existe mais. Caso o serviço ainda esteja pendente é possível alterar para uma nova categoria válida.
+
+No caso do cliente ser deletado, ele só é excluído do banco de dados caso não haja nenhum serviço associado a ele, caso contrário ele tem seu status de cliente definido como 'Inativo' e é removido da lista de clientes, sendo possível ver suas informações apenas através do serviço em que ele ainda existe, com uma coloração cinza que indica que o cliente é inativo no sistema. Após o serviço que o cliente está associado deixar de existir, o cliente inativo também desaparecerá do banco, não sendo mais possível recuperar suas informações.
+
+## Filtro de pesquisa:
+O filtro de pesquisa utiliza queries buscando a informação diretamente no banco de dados, logo o filtro de busca até a atual versão (10.06.2022) não é case sensitive, buscando um conjunto de caracteres independente do caso.
+Digitando sua busca e clicando "Pesquisar" o programa exibirá a lista dos resultados encontrados.
+Ao buscar um termo que não existe a lista ficará vazia.
+Para retornar a lista principal você pode reabrir a tela ou pesquisar uma pesquisa vazia: Apague sua última pesquisa e apenas clique 'Pesquisar' novamente.
+
+#### Exemplos de resultado de busca para uma lista fictícia de serviços:
+Cliente solicitante | Categoria | Data | Hora
+--------------------|-----------|------|-----
+Beatriz Nataly      |Develop    |01.01|12:00
+Camilla Antonio Rui |UX Writing|01.01|13:00
+Pabblo Agú|Develop|10.01|14:20
+Romanato Marcel|Engenharia| 11.02|12:30
+
+* Buscando "01.01" obtemos: Beatriz e Camilla
+* Buscando "01" obtemos: Beatriz, Camilla e Pabblo
+* Buscando "Develop" obtemos: Beatriz e Pabblo
+* Buscando "L" obtemos: Beatriz, Camilla, Pabblo e Romanato (Pois todos possuem L em algum ponto de seu nome e/ou sobrenome).
