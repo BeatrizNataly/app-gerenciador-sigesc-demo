@@ -65,3 +65,4 @@ Romanato Marcel|Engenharia| 11.02|12:30
 * Buscando "01" obtemos: Beatriz, Camilla e Pabblo
 * Buscando "Develop" obtemos: Beatriz e Pabblo
 * Buscando "L" obtemos: Beatriz, Camilla, Pabblo e Romanato (Pois todos possuem L em algum ponto de seu nome e/ou sobrenome).
+* Buscando "12:45" não obtemos ninguém, pois ninguém tem essa data específica, apesar de terem datas com os números 12 ou 45.
