@@ -66,3 +66,21 @@ Romanato Marcel|Engenharia| 11.02|12:30
 * Buscando "Develop" obtemos: Beatriz e Pabblo
 * Buscando "L" obtemos: Beatriz, Camilla, Pabblo e Romanato (Pois todos possuem L em algum ponto de seu nome e/ou sobrenome).
 * Buscando "12:45" não obtemos ninguém, pois ninguém tem essa data específica, apesar de terem datas com os números 12 ou 45.
+
+## Menus:
+O menu das telas é composto principalmente por ícones que realizam diferentes ações no programa.
+Esses ícones possuem descrição para auxiliar pessoas com dificuldade visual, e títulos para melhorar sua compreensão para novos usuários.
+Para ver o título de um botão do menu basta pressionar e segurar o botão, então seu título apareçerá abaixo do ícone como um texto simples com sombreamento preto.
+
+#### Glossário de símbolos dos ícones:
+##### Última alteração dos ícones feita em 13/jun/2022.
+
+* Seta apontando para esquerda: Ícone que indica ação de "voltar". Quando localizado numa lista retornará para a lista inicial de clientes,
+quando no menu de um formulário, retornará para a lista de origem daquele formulário, exemplo: Formulário de clientes + <- = Lista de clientes.
+* Prancheta: O ícone de prancheta, lousa ou quadro de anotações leva para a lista de serviços.
+* Pessoa com lupa: Esse ícone levará o usuário à lista de clientes.
+* Formas geométricas: Esse ícone indica a tela com a lista de Categorias de Serviços, e levará o usuário até ela.
+* Adicionar: O ícone flutuante de +, ou 'adicionar', abre um formulário. O formulário aberto dependerá da lista de origem.
+* Marca de confirmação/checagem: Na lista de serviços, quando apertado muda o status de um serviço para 'Concluído'.
+* Marca de X/errado: Na lista de serviços, quando apertado muda o status de um serviço para 'Cancelado'.
+* Lixeira: Quando o símbolo de lixeira é pressionado, ele exclui o item ao qual ele se referia.
