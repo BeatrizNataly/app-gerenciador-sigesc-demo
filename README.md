@@ -1,4 +1,5 @@
 # Gerenciador de Serviços e Clientes (DEMO)
+## Beatriz Nataly
 Demonstração de aplicação mobile com banco de dados, capaz de gerenciar lista de clientes, categoria de serviço e serviços solicitados.
 
 ## Funcionalidades:
